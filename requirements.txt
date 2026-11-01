@@ -1,0 +1,23 @@
+# Python dependencies for p_hunter_pipeline
+# Install inside the project's virtual environment:
+#   python -m pip install -r requirements.txt
+#
+# The scripts themselves use only the standard library. Everything below is
+# for speed, building the Rust backends, or optional features.
+
+# Builds and installs the Rust backends (p_hunter_tf, p_hunter_rs).
+# Also needs a Rust toolchain: https://rustup.rs
+maturin>=1,<2
+
+# Fast primality checks for the close-out step (strongly recommended,
+# needed for huge exponents in the web UI). Needs GMP; wheels exist for most
+# platforms.
+gmpy2>=2.1
+
+# Optional fallbacks for the close-out primality check (used if gmpy2 is
+# missing). Slower on large numbers.
+sympy>=1.12
+numthy>=0.2
+
+# Optional: only used to fit scorer calibration weights in revised_binV3.py
+# scikit-learn>=1.3

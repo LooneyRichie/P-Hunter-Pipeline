@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.pyc
+target/
+*.so
+
+# Local run state and results (remove these lines to publish your own data)
+farm_state.json
+farm_survivors*.json
+farm_survivors*.txt
+eliminate_state.json
+range_*.json
+p_hunter_state.json
+deep_verify_state.json
+scorer_calibration.json
