@@ -1,6 +1,6 @@
-# p_hunter_pipeline
+# P Hunter Pipeline
 
-`p_hunter_pipeline` is a collection of Python command-line tools and optional
+`P Hunter Pipeline` is a collection of Python command-line tools and optional
 Rust/PyO3 extensions for searching prime exponents `p` whose Mersenne numbers
 
 ```text
